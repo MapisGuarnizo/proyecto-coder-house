@@ -1,0 +1,203 @@
+/*Reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Header */
+header{
+    background-color:olivedrab;
+    text-align: right;
+    
+}
+header .logo{
+    display:none
+}
+header ol{
+    display: none;  
+}
+body h1{
+    color:#026937;
+    margin-top: 40px;
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 600;
+    font-size: 3.5rem;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+}
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /*Vertical*/
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+main img{
+    width: 100%;
+    border-radius: 15px;
+
+}
+main h2{
+    font-family: 'Oswald', sans-serif; 
+    display: flex;
+    flex-direction: column;
+    align-items: left; /*Vertical*/
+    color: #87ce21;
+    text-transform:uppercase;
+    font-size: 2rem;
+    margin-top: 3rem;   
+}
+main p{
+    font-family: 'Oswald', sans-serif; 
+    margin-top: 1rem;  
+}
+main .boton{
+    background-color: #87ce21;
+    display: flex;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 50px;
+    margin-top: 3rem;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    text-transform:uppercase;
+    letter-spacing: 1px;
+
+}
+
+/*mq*/
+@media screen and (min-width: 800px){
+    /* Header */
+    header{
+    background-color:olivedrab;
+    text-align: right;
+    height: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    }
+    header .logo{
+        display:block
+ 
+    }
+    header ol{
+    display: block;
+    }
+    header ol li{
+    list-style: none;
+    display: inline-block;
+    margin-top: 15px;   
+    }
+
+    header ol li a{
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif; 
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding: 15px;
+    color: white;
+    }
+    main{
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        grid-template-rows: o.5fr 1fr 0.5fr 0.5fr;
+        grid-template-areas: 
+            "img h2"
+            "img h2"
+            "img p"
+            "img boton ";
+            margin-top: 3rem;
+    }
+    
+    main img{
+        grid-area: img;
+        margin-left: 6rem;
+        width: 80%;
+        border-radius: 15px;
+    }
+    main h2{
+        grid-area: h2;
+        font-family: 'Oswald', sans-serif; 
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        color: #87ce21;
+        text-transform:uppercase;
+        font-size: 2.5rem;
+        
+    }
+    main h2 span{
+        display: block;
+    }
+    
+    main p{
+        grid-area: p;
+        
+    }
+    main .boton{
+        grid-area: boton;
+        padding-right: 1rem;
+        padding-left: 3rem;
+        margin-right: 25rem;
+        align-content: center;
+    }
+}
+
+
+
+
+
+
+
+
+.card{
+    display: flex;
+    margin-top: 50px;
+}
+
+.cardText{
+    margin-left: 50px;
+
+}
+
+.cardImg{
+    height: 500px;
+    width: auto;
+    margin-left: 100px;
+}
+
+/* Imagenes */
+
+.plantas{
+    text-align: center;
+    display: flex;
+}
+
+body .planta{
+    height: 200px;
+    width: auto;
+    margin: 50px;
+    padding: 15px;
+    
+}
+
+/* Formulario */
+.formulario{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-bottom: 50px;
+    padding: 20px;
+}
+
+.formularioInput{
+    margin-left: 30px;
+    margin-top: 60px;
+    padding-top: 50px;
+    display: inline;
+}
+
